@@ -14,7 +14,10 @@
 .recommendation {
     color: var(--color-txt-white);
     position: relative;
+    text-align: start;
 }
+
+
 
 .recommendation::after {
     content: '';
@@ -30,6 +33,10 @@
     margin-top: 70px;   
     color: var(--color-txt-white);
     margin-bottom: 45px;
+    text-align: start;
+    font-weight: 400;
+    font-size: 22px;
+    color: #F6F6F8;
 }
 
 @media (max-width: 1024px) {

@@ -4,7 +4,7 @@ import TeacherImg from '../../images/teacher.png'
 
 export default function Teacher() {
   return (
-    <div className='teacher'>
+    <div id='about' className='teacher'>
         <div className="teacher-img">
             <img src={TeacherImg} alt="" />
         </div>

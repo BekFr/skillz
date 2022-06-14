@@ -5,6 +5,7 @@ import './Nav.css';
 import Basket from '../../images/basket.png'
 
 export default function Nav() {
+
   return (
     <nav className='nav'>
       <div className='container nav-container'>

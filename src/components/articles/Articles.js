@@ -5,7 +5,7 @@ import Article from '../../images/articles.png'
 
 export default function Articles() {
   return (
-    <section id='artiles' className='articles'>
+    <section id='blog' className='articles'>
         <div className='container'>
             <div className="courses-content">
             <h1 className='articles-title'>Recent Articles</h1>

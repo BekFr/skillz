@@ -13,10 +13,6 @@
     position: relative;
 }
 
-/* .navbar {
-    display: inline;
-} */
-
 .navbar a{
     color: var(--color-txt-white);
     margin-right: 40px;
@@ -68,7 +64,6 @@
 
 
 @media (max-width: 1024px) {
-   
     .nav-container {
         display: flex;
     }
@@ -110,10 +105,11 @@
       width: 100%;
       background-color: var(--color-bg-variant);
       height: 0px;
-      transition: all 0.3s ease-in;
+      transition: all .2s linear;
       overflow: hidden;
       top: 50px;
       left: 0px;
+      border-radius: 1rem;
     }
     .navbar > a {
       display: block;
@@ -122,11 +118,12 @@
     }
 
     #nav-check:not(:checked) ~ .navbar {
-      height: 0px;
+      height: 0;
     }
 
     #nav-check:checked ~ .navbar {
-      height: calc(100vh - 50px);
+      padding: 1rem 0;
+      height: max-content;
       overflow-y: auto;
     }
 }

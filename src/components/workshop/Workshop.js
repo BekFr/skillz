@@ -1,10 +1,10 @@
 import React from 'react';
 import './Workshop.css';
-import Card from '../../images/card.png'
 
 export default function Workshop() {
+
   return (
-    <section id='workshop' className='workshop'>
+    <section id='free-workshops' className='workshop'>
         <div className='container'>
             <div className="workshop-content">
                 <h1 className='type-course-workshop'>Upcoming Free Workshops</h1>
