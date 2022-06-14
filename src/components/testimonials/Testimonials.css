@@ -1,0 +1,49 @@
+.testimonials {
+    background-color: var(--color-primary);
+    margin:0 auto;
+    padding: 80px 220px 160px;
+}
+
+.container {
+    text-align: center;
+}
+
+.content h3 {
+    color: var(--color-txt-variant);
+}
+
+.content p {
+    color: #1C1C33;
+}
+
+.swiper-pagination-bullet {
+    background-color: #222222 !important;
+    width: 18px !important;
+    height: 18px !important;
+    margin-bottom: 90px !important;
+}
+
+
+/* ===============================  Media Queery  ================================ */
+
+
+@media (max-width: 1024px) {
+    .testimonials{
+        padding: 80px 40px 150px;
+    }
+
+    .swiper-pagination-bullet {
+        margin-bottom: 40px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonials{
+        padding: 80px 0;
+      width: var(--container-width-sm   );
+    }
+
+    .swiper-pagination-bullet {
+        margin-bottom: 10px !important;
+    }
+}

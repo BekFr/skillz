@@ -1,0 +1,49 @@
+.teacher {
+    background-color: var(--color-bg-variant);
+    display: flex;
+} 
+
+.teacher-img {
+    width: 50%;
+}
+
+.teacher-img > img {
+    width: 100%;
+}
+
+.recommendation {
+    color: var(--color-txt-white);
+    position: relative;
+}
+
+.recommendation::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: var(--color-primary);
+    bottom: -1rem;
+    left: 0;
+}
+
+.lorem {
+    margin-top: 70px;   
+    color: var(--color-txt-white);
+    margin-bottom: 45px;
+}
+
+@media (max-width: 1024px) {
+    .teacher {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 2rem;
+    }
+
+    .teacher-img {
+        width: 100%;
+    } 
+    
+    .recommendation  {
+        font-size: 2rem;
+    }
+}

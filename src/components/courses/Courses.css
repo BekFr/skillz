@@ -1,0 +1,102 @@
+.courses {
+    background-color: var(--color-bg-variant);
+    text-align: center
+}
+
+.type-course {
+    color: var(--color-txt-white);
+    position: relative;
+}
+
+.type-course::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: var(--color-primary);
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.description {
+    margin: 70px auto 45px;
+    width: 40%;
+    height: auto;
+}
+
+.description p {
+    color: var(--color-txt-white);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+    margin-top: 80px;
+    padding: 0;
+}
+
+.card {
+    width: 100%;
+    background-color: var(--color-txt-white);
+    border-radius: .5rem;
+    overflow: hidden;
+    text-align: start;
+}
+
+.card-content {
+    padding: 0 24px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-title {
+    color: var(--color-txt-variant);
+    line-height: 28px;
+}
+
+.name {
+    line-height: 27px;
+    color: #4E4E65;
+    margin-top: 8px;
+}
+
+.price {
+    margin: 15px 0 8px;
+    color: var(--color-txt-variant);
+}
+
+.additional {
+    color: #57D9A6;
+    margin-bottom: 30px;
+}
+
+.additional:hover {
+    cursor: pointer;
+}
+
+/* ================================  Media Query  ============================= */
+
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .description {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr ;
+    }
+
+    .description {
+        width: 100%;
+    }
+}

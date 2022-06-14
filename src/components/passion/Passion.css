@@ -1,0 +1,61 @@
+.passion {
+    background-color: var(--color-bg-variant) !important;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.passion-label{
+    color: var(--color-txt-white);
+    display: inline-block;
+    position: relative;
+}
+
+.passion-label::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: var(--color-primary);
+    bottom: -1rem;
+    left: 0;
+}
+
+.right {
+    text-align: start;
+}
+
+.right > .passion-text {
+    color: var(--color-txt-white);
+    line-height: 33px;
+    margin: 70px 0 45px;
+}
+
+
+.learn_btn {
+    margin-top: 48px;
+}
+
+/* ===================  Responsive  ======================= */
+
+@media (max-width: 1300px) {
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem 0;
+        justify-content: center;
+        width: var(--container-width-md);
+    }
+
+    .left {
+        width: var(--container-width-md);
+        text-align: center;        
+    }
+
+    .phone {
+        width: 100%;
+    }
+}

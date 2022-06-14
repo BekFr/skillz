@@ -1,0 +1,77 @@
+header{
+    background: var(--color-bg);
+}
+
+.top {
+    height: 43px;
+    background-color: var(--color-primary);
+    position: relative;
+}
+
+.top .top-txt {
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-txt-variant);
+}
+
+
+/* ================  Header main  =================== */
+
+
+.header-container {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-label {
+    color: var(--color-txt-white);
+    display: inline-block;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.label-title {
+    color: var(--color-txt-white);
+    line-height: 60px;
+    margin: 60px 0 22px 0;
+}
+
+.right > .text {
+    color: var(--color-txt-white);
+    line-height: 33px;
+    margin-bottom: 22px;
+}
+
+.right .name {
+    line-height: 27px;
+    color: #B2B2BF;
+}
+
+.learn_btn {
+    margin-top: 48px;
+}
+
+
+/* ===================  Responsive  ======================= */
+
+@media (max-width: 1300px) {
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem 0;
+        justify-content: center;
+        width: var(--container-width-md);
+    }
+
+    .left {
+        width: var(--container-width-md);
+        text-align: center;        
+    }
+
+    .phone {
+        width: 100%;
+    }
+}
